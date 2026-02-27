@@ -1,0 +1,95 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+ <link href="style.css" rel="stylesheet">
+  </head>
+
+  <body data-theme="light">
+    <p id="fs" class="text-center">nothing</p>
+    <p id="sum"></p>
+    <form id="myForm">
+    <input id="inp" class="namef" type="text" placeholder="Enter your name">
+    </form>
+    <button class="btn btn-wide" onclick="document.getElementById('thebut').innerHTML=getname();">click to verify</button>
+    <p id="thebut">check</p>
+    <h1 id="the1">Tailwind Working</h1>
+    <p class="thep" id="const"></p>
+  
+<button class="btn btn-primary" onclick="document.getElementById('the1').innerHTML='wft';">Test Button</button>
+<p class="cls">well well well</p>
+<button class="btn btn-neutral" onclick="myfirstfunction()">change text</button><br>
+<p id="tsum">this text will change</p>
+<button class="btn btn-secondary" onclick="document.getElementById('tsum').innerHTML='the sum is: '+' '+sume(6,7)">show the sum</button><br>
+<P id="arr1">games will appear here</P>
+<button class="btn btn-accent" onclick="document.getElementById('arr1').innerHTML=games;">show games</button>
+<P id="strawhats">strawhats members will appear here</P>
+<button class="btn btn-info" onclick="document.getElementById('strawhats').innerHTML=strawhats;">strawhats</button>
+<p id="mm">the big and small will apear here</p>
+<button class="btn btn-warning" onclick="document.getElementById('mm').innerHTML='the min is'+' '+min+' '+'the max is'+' '+max;">show m&m</button>
+
+
+  </body>
+  <!-- <script> alert("this is js alert");</script> -->
+</html>
+
+<script> 
+let x = 5;
+let y = 10;
+let z = x + y;
+const name = "alhareth";
+document.getElementById("fs").innerHTML="thing";
+document.getElementById("sum").innerHTML="the sum is " + z;
+document.getElementById("const").innerHTML="the name is " + name;
+//name = "something else";
+console.log("here is the console log");
+
+</script>
+<script>
+  function myfirstfunction(){
+  document.getElementsByClassName("cls")[0].innerHTML="functions seems pretty easy";
+  }
+</script>
+
+<script>
+function sume(x,y){
+  return x+y;
+}
+</script>
+
+<script>
+const games = ["fire emblem", "magaman zero", "silhouette mirage"];
+games.push("elden ring");
+games[2]="hollow knight";
+</script>
+
+<script>
+  const strawhats=[captin="luffy", rhand="zoro", lhand="sanji", archaeologist="robin", hunter="ussop",doctor="chopper",];
+  strawhat.navigator="nami";
+</script>
+
+<script>
+  let nums = "2468";
+  let min = Math.min(...nums);
+  let max = Math.max(...nums);
+</script>
+
+<script>
+  function getname(){
+    let cname="";
+  cname= parseFloat(document.getElementById("inp").value);
+    if (isNaN(cname)) {
+    return document.getElementById("thebut").innerHTML = "Not a number";
+    }
+  if(cname >= 21){
+    return document.getElementById("thebut").innerHTML="welcome";
+   }
+   
+else{
+    return document.getElementById("thebut").innerHTML="your not allowed";
+}
+  
+  }
+</script>
+

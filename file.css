@@ -1,0 +1,23 @@
+@import "tailwindcss";
+  @plugin "daisyui";   
+  *{
+    /* text-align: center; */
+  }
+h1 {
+ @apply bg-gray-200 text-4xl font-bold text-blue-600  p-5;
+}
+body{
+    @apply bg-blue-500;
+}
+p{
+    @apply  text-2xl text-gray-300 font-bold;
+}
+.thep{
+    @apply   bg-blue-500 text-4xl font-bold text-gray-200;
+}
+.cls{
+     @apply   bg-blue-500 text-4xl font-bold text-gray-200;
+}
+input.namef {
+  @apply bg-blue-600 border-2 text-white border-blue-300 rounded;
+}
